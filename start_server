@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /var/webapp/
+sudo nohup npm start -d /var/webapp/ >logs.log 2>Error.err < /dev/null &

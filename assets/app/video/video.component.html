@@ -1,0 +1,36 @@
+<section class="HomeVideoSect">
+  <div class="container-fluid">
+     <div class="row">
+         <div class="col-xs-12">
+             <div class="soialFooter">
+      <ul>
+      <li *ngFor="let video of videos"
+        [class.selected]="video === selectedVideo"
+        (click)="onSelect(video)">
+        <i class="fa fa-eye" aria-hidden="true"> {{video.title}}</i>
+      </li>
+    </ul>
+             </div>
+         </div>
+      </div>
+     
+      <div class="row">
+      <div class="col-lg-10 col-md-9 col-sm-8">
+      <div class="HomeVideoLeft">
+        <div class="VideoListing dropdown" id="vList">
+
+          
+          <a href="#vList"  data-toggle="dropdown" class="RightBarArrow"><i class="fa fa-chevron-left"></i> <i class="fa fa-chevron-right"></i></a>
+        </div><!-- end of Video listing -->
+        <div class="MainVideo">
+          <div data-vimeo-url="https://player.vimeo.com/video/201109202?autoplay=1" id="videoPlayer" class="videoWrapper"></div>
+        </div><!-- end of Main Video -->
+      </div>
+      </div>
+      <!-- end of Home Video left -->
+
+      </div>
+
+
+  </div>
+</section>
